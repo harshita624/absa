@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+checkpoints/*
+results/*
+results_smoke/*
+figures/*
+!results/.gitkeep
+!results_smoke/.gitkeep
+!checkpoints/.gitkeep
+!figures/.gitkeep
+
+# Local datasets and generated pilot artifacts
+data/
+fast_pilot/
+src/absa_depth.egg-info/

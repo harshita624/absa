@@ -1,0 +1,15 @@
+project: Adaptive Depth for Aspect-Level Sentiment
+encoder: bert-base-uncased
+batch_size: 32
+epochs: 3
+seeds: [42, 43, 44]
+encoder_lr: 0.00002
+head_lr: 0.001
+alpha: 0.3
+beta: 0.003
+tau_grid: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95]
+beta_grid: [0, 0.001, 0.003, 0.01, 0.03]
+fixed_layers: [2, 4, 6, 8, 10, 12]
+max_length: 256
+amp: false
+gate_detach_inputs: true
